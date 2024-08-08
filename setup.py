@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
 
-with open('requirements.txt') as fp:
+with open('SOMperf/requirements.txt') as fp:
     install_reqs = [r.rstrip() for r in fp.readlines()
                     if not r.startswith('#') and not r.startswith('git+')]
 
-with open('somperf/__version__.py') as fh:
+with open('SOMperf/somperf/__version__.py') as fh:
     version = fh.readlines()[-1].split()[-1].strip('\'\'')
 
 setup(
